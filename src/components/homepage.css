@@ -1,5 +1,9 @@
-
+.main{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    line-height: 1.6;
+}
 .background{
+    background-image: url(../image/beachshowcase.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -7,89 +11,91 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    
+    margin-bottom: auto;
+    height: 100vh; 
 }
 
 .button{
-    border-radius: 15px;
-    border: 1px #926239;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid #926239;
     color:#926239;
-    width: 100px;
-    height: 50px;
+    padding: 15px 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    cursor: pointer;
 }
- /* h1{
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    color: brown;
-    } */
 
-    .center {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #926239;
-      }
+.button:hover {
+    background-color:#926239 ;
+    color: #fff;
+}
+.center {
+    position: absolute;
+    color: #926239;
+  
+}
+
+.center h1{
+    font-size: 50px;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
    
-    .paragraph-a{
-        background-color: #926239;
-        text-align: center;
-        color: white;
-    }
+}
 
-    .paragraph-b{
-        background-color:white;
-    }
+.center p{
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+   
+}
+   
+.paragraph-a{
+    background-color: #926239;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+}
 
-    /* .box-a{
-       
-        background-color: brown;
-        color: white;
-        width: 50px;
-        height: 50px;
-    }
-
-    .box-b{
-       
-        background-color: white;
-        color: white;
-        width: 50px;
-        height: 50px;
-    }
-    .box-c{
-      
-        background-color: brown;
-        color: white;
-        width: 50px;
-        height: 50px;
-    }
-     */
+.paragraph-b {
+    background: #f4f4f4;
+    color: #926239;
+    text-align: center;
+    padding: 10px;
+}
 
 .box{
   float: left;
-  width: 30.33%;
+  width: calc( 33.33% - 20px);
+  height: 100px;
+  text-align: justify;
+  margin: 0;
   padding: 10px;
-  height: 300px; 
 }
 
-/* .row:after {
+.row:after {
     content: "";
     display: table;
     clear: both;
-  } */
-
+  }
+ 
 .a {
     background-color: #926239;
-    
+    color: #fff;
+   
 }
 
 .b {
-    background-color: white;
-   
+    background-color: #fff;
+    color:#926239; 
+    
 }
 
 .c {
     background-color: #926239;
-   
+    color: #fff;;
 }
+
